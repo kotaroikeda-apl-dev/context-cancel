@@ -2,12 +2,14 @@
 
 ```sh
 go run cmd/withCancel/main.go # キャンセルを実装
+go run cmd/withTimeout/main.go # タイムアウトを実装
 ```
 
 ## **学習ポイント**
 
 1. **`context`** を利用して、ワーカーの実行中に外部からキャンセル信号を送る方法を学べる
 2. **`sync.WaitGroup`** と **`channel`** を組み合わせることで、並行処理の終了管理やリソースの安全な解放が実現できる
+3. **`context.WithTimeout`** を利用して、タイムアウトを設定し、タイムアウトした場合にキャンセルする方法を学べる
 
 ## 作成者
 
